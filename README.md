@@ -67,6 +67,17 @@ Sequence diagram ini menggambarkan bagaimana **Strategy Design Pattern** bekerja
 
 ![Sequence Diagram - Strategy Pattern](https://github.com/user-attachments/assets/d0211a54-3ab2-4438-9ec9-036737070955)
 
+### 📌 CLI Apps
+<img width="202" alt="Screen Shot 2025-02-09 at 16 52 49" src="https://github.com/user-attachments/assets/872e5745-d8e6-40d7-b931-3a03663a9af8" />
+Saat berada di halaman awal aplikasi.
+
+<img width="519" alt="Screen Shot 2025-02-09 at 16 56 08" src="https://github.com/user-attachments/assets/d5139071-7fc7-42db-b46d-bd3c51bea370" />
+Saat ingin menambahkan data karyawan baru.
+
+<img width="809" alt="Screen Shot 2025-02-09 at 16 57 40" src="https://github.com/user-attachments/assets/a1d129ff-2d4d-4ba4-a272-7e3f81f9069c" />
+Saat ingin melihat data karyawan secara lengkap dari data yang sudah diinputkan sebelumnya.
+
+
 ---
 
 ## 🎯 Kesimpulan
