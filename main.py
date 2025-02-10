@@ -89,16 +89,54 @@ def create_employee():
 def read_employees():
     if not employees:
         print("No employees found.")
-    for emp in employees:
+        return
+    
+    for idx, emp in enumerate(employees, start=1):
+        print(f"ID: {idx}")
         print(emp.get_info())
         print("----------------------")
+
+def update_employee():
+    read_employees()
+    if not employees:
+        return
+
+    emp_id = int(input("Enter Employee ID to update: ")) - 1
+    if emp_id < 0 or emp_id >= len(employees):
+        print("Invalid Employee ID!")
+        return
+
+    employee = employees[emp_id].employee  # Get the actual Employee object
+    
+    print("\nUpdating Employee Information:")
+    employee.name = input(f"Enter new name ({employee.name}): ") or employee.name
+    employee.position = input(f"Enter new position ({employee.position}): ") or employee.position
+    employee.salary = float(input(f"Enter new salary ({employee.salary}): ") or employee.salary)
+    employee.hire_date = date.fromisoformat(input(f"Enter new hire date ({employee.hire_date}): ") or str(employee.hire_date))
+    
+    print("Employee updated successfully!")
+
+def delete_employee():
+    read_employees()
+    if not employees:
+        return
+
+    emp_id = int(input("Enter Employee ID to delete: ")) - 1
+    if emp_id < 0 or emp_id >= len(employees):
+        print("Invalid Employee ID!")
+        return
+
+    employees.pop(emp_id)
+    print("Employee deleted successfully!")
 
 # ====== Main Program ======
 if __name__ == "__main__":
     while True:
         print("\n1. Add Employee")
         print("2. View Employees")
-        print("3. Exit")
+        print("3. Update Employee")
+        print("4. Delete Employee")
+        print("5. Exit")
         choice = input("Enter choice: ")
         
         if choice == "1":
@@ -106,6 +144,10 @@ if __name__ == "__main__":
         elif choice == "2":
             read_employees()
         elif choice == "3":
+            update_employee()
+        elif choice == "4":
+            delete_employee()
+        elif choice == "5":
             break
         else:
             print("Invalid choice, please try again.")
