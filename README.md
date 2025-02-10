@@ -55,8 +55,9 @@ Class diagram di bawah ini menunjukkan implementasi **Strategy Design Pattern** 
 - **EmployeeStrategy** adalah antarmuka yang menentukan metode `get_info()`.
 - **ManagerStrategy, EngineerStrategy, dan InternStrategy** adalah implementasi spesifik dari strategi tersebut.
 - **Employee** adalah kelas dasar yang memiliki atribut umum, sedangkan **Manager, Engineer, dan Intern** adalah subclass yang menambahkan atribut spesifik masing-masing.
+<img width="974" alt="Screen Shot 2025-02-10 at 08 43 13" src="https://github.com/user-attachments/assets/8d4ed37b-88f7-47e3-9615-b8bdeb12bbb4" />
 
-![Class Diagram - Strategy Pattern](https://github.com/user-attachments/assets/1a89a857-d90a-4b37-8965-11398bc2369f)
+
 
 ### 📌 Sequence Diagram "Strategy Design Pattern"
 Sequence diagram ini menggambarkan bagaimana **Strategy Design Pattern** bekerja dalam konteks manajemen karyawan.
