@@ -1,4 +1,4 @@
-# 📌 Laporan Design Pattern - Python OOP
+# 📌 Laporan Design Pattern 
 ## 📝 Raflee Caesar Dano Malik
 
 ---
