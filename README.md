@@ -18,7 +18,7 @@ Diagram ini menunjukkan hubungan antara kelas-kelas dalam sistem manajemen karya
 - **EmployeeAdapter** bertindak sebagai perantara antara Employee dan antarmuka **IEmployee**, yang hanya memiliki metode `get_info()`.
 - **Adapter** memungkinkan kelas yang sudah ada untuk digunakan dengan cara yang lebih sesuai dengan kebutuhan sistem, tanpa harus mengubah kode aslinya.
 
-![Class Diagram - Adapter Pattern](https://github.com/user-attachments/assets/f0e8ca9a-e2d7-429b-b004-368b512d3247)
+![Class Diagram - Adapter Pattern](<img width="883" alt="Screen Shot 2025-02-10 at 08 40 54" src="https://github.com/user-attachments/assets/02fa2d50-d7d4-412a-ae38-d55d6c4396fb" />)
 
 ### 📌 Sequence Diagram "Adapter Design Pattern"
 Sequence diagram ini menggambarkan bagaimana sistem menangani input pengguna untuk membuat dan menampilkan informasi karyawan.
