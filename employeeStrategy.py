@@ -38,7 +38,7 @@ class EmployeeContext:
     def get_employee_info(self):
         return self.strategy.get_info(self.employee)
 
-# ====== Employee Classes (Unchanged) ======
+# ====== Employee Classes ======
 class Employee:
     def __init__(self, name: str, position: str, year_hired: int, salary: float, hire_date: date):
         self.name = name
@@ -105,16 +105,37 @@ def create_employee():
 def read_employees():
     if not employees:
         print("No employees found.")
-    for emp in employees:
-        print(emp.get_employee_info())
+        return
+    for i, emp in enumerate(employees):
+        print(f"[{i}] {emp.get_employee_info()}")
         print("----------------------")
+
+def update_employee():
+    read_employees()
+    index = int(input("Enter Employee Index to Update: "))
+    if 0 <= index < len(employees):
+        employees[index].employee.salary = float(input("Enter New Salary: "))
+        print("Employee updated successfully!")
+    else:
+        print("Invalid index!")
+
+def delete_employee():
+    read_employees()
+    index = int(input("Enter Employee Index to Delete: "))
+    if 0 <= index < len(employees):
+        employees.pop(index)
+        print("Employee deleted successfully!")
+    else:
+        print("Invalid index!")
 
 # ====== Main Program ======
 if __name__ == "__main__":
     while True:
         print("\n1. Add Employee")
         print("2. View Employees")
-        print("3. Exit")
+        print("3. Update Employee")
+        print("4. Delete Employee")
+        print("5. Exit")
         choice = input("Enter choice: ")
         
         if choice == "1":
@@ -122,6 +143,10 @@ if __name__ == "__main__":
         elif choice == "2":
             read_employees()
         elif choice == "3":
+            update_employee()
+        elif choice == "4":
+            delete_employee()
+        elif choice == "5":
             break
         else:
             print("Invalid choice, please try again.")
