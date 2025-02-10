@@ -21,6 +21,9 @@ Diagram ini menunjukkan hubungan antara kelas-kelas dalam sistem manajemen karya
 ![Class Diagram - Adapter Pattern]
 <img width="883" alt="Screen Shot 2025-02-10 at 08 40 54" src="https://github.com/user-attachments/assets/de2ea333-a0d1-463a-8450-052fe9faf0aa" />
 
+### 📌 Use Case Diagram "APP"
+<img width="599" alt="Screen Shot 2025-02-10 at 09 16 32" src="https://github.com/user-attachments/assets/731cb8c2-ed2e-4235-b955-5b22d01f8fe2" />
+
 
 ### 📌 Sequence Diagram "Adapter Design Pattern"
 Sequence diagram ini menggambarkan bagaimana sistem menangani input pengguna untuk membuat dan menampilkan informasi karyawan.
@@ -58,6 +61,8 @@ Class diagram di bawah ini menunjukkan implementasi **Strategy Design Pattern** 
 <img width="974" alt="Screen Shot 2025-02-10 at 08 43 13" src="https://github.com/user-attachments/assets/8d4ed37b-88f7-47e3-9615-b8bdeb12bbb4" />
 
 
+### 📌 Use Case Diagram "APP"
+<img width="599" alt="Screen Shot 2025-02-10 at 09 16 32" src="https://github.com/user-attachments/assets/731cb8c2-ed2e-4235-b955-5b22d01f8fe2" />
 
 ### 📌 Sequence Diagram "Strategy Design Pattern"
 Sequence diagram ini menggambarkan bagaimana **Strategy Design Pattern** bekerja dalam konteks manajemen karyawan.
