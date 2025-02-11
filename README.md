@@ -8,7 +8,7 @@
 ## 🔷 Adapter Design Pattern
 
 ### 📌 Konsep Adapter Design Pattern
-**Adapter Pattern** bekerja seperti penerjemah yang membantu dua pihak yang berbeda agar bisa berkomunikasi.
+**Adapter Pattern** bekerja seperti penerjemah yang membantu dua pihak yang berbeda agar bisa berkomunikasi. 
 
 - **Target** → Antarmuka standar yang diharapkan klien untuk berinteraksi.
 - **Adaptee** → Kelas dengan fungsi yang diinginkan, tetapi menggunakan cara berbeda.
@@ -88,7 +88,7 @@ Bagaimana sistem bekerja:
 3. **Strategy** mengambil informasi karyawan.
 4. Data dikembalikan dan ditampilkan ke **Client**.
 
-![Sequence Diagram - Strategy Pattern](https://github.com/user-attachments/assets/d0211a54-3ab2-4438-9ec9-036737070955)
+<img width="951" alt="Sequence Diagram - Strategy Pattern" src="https://github.com/user-attachments/assets/d0211a54-3ab2-4438-9ec9-036737070955" />
 
 ---
 
@@ -96,13 +96,13 @@ Bagaimana sistem bekerja:
 ### 📌 Tampilan Aplikasi Command Line
 
 **Halaman utama aplikasi:**
-<img width="192" alt="CLI Home" src="https://github.com/user-attachments/assets/5e61e7ca-92b6-4c3d-bbe9-ce8e27d5a3f1" />
+<img width="192" alt="Screen Shot 2025-02-11 at 13 52 07" src="https://github.com/user-attachments/assets/5e61e7ca-92b6-4c3d-bbe9-ce8e27d5a3f1" />
 
 **Menambahkan karyawan baru:**
-![CLI Add Employee](https://github.com/user-attachments/assets/d5139071-7fc7-42db-b46d-bd3c51bea370)
+<img width="519" alt="CLI Add Employee" src="https://github.com/user-attachments/assets/d5139071-7fc7-42db-b46d-bd3c51bea370" />
 
 **Melihat data karyawan:**
-![CLI View Employee](https://github.com/user-attachments/assets/a1d129ff-2d4d-4ba4-a272-7e3f81f9069c)
+<img width="519" alt="CLI View Employee" src="https://github.com/user-attachments/assets/a1d129ff-2d4d-4ba4-a272-7e3f81f9069c" />
 
 ---
 
@@ -111,4 +111,7 @@ Bagaimana sistem bekerja:
 ✅ **Strategy Pattern** → Memungkinkan perubahan strategi secara fleksibel tanpa mengubah struktur kode utama.
 ✅ **Keuntungan:** Meningkatkan modularitas, fleksibilitas, dan keterbacaan kode dalam sistem berbasis **OOP**.
 
+> 💡 Dengan memahami dan mengimplementasikan Design Patterns ini, kita dapat membangun aplikasi yang lebih **scalable** dan **maintainable**!
+
+🚀 **Siap untuk membuat kode yang lebih rapi dan efisien? Let's code smart!**
 
