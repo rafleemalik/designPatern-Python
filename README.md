@@ -87,8 +87,9 @@ Sequence diagram ini menggambarkan bagaimana **Strategy Design Pattern** bekerja
 ### 📌 Tampilan Aplikasi Command Line
 
 Saat berada di halaman awal aplikasi:
+<img width="192" alt="Screen Shot 2025-02-11 at 13 52 07" src="https://github.com/user-attachments/assets/5e61e7ca-92b6-4c3d-bbe9-ce8e27d5a3f1" />
 
-![CLI Home](https://github.com/user-attachments/assets/872e5745-d8e6-40d7-b931-3a03663a9af8)
+
 
 Saat ingin menambahkan data karyawan baru:
 
