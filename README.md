@@ -37,7 +37,8 @@ Sequence diagram ini menggambarkan bagaimana sistem menangani input pengguna unt
 6. Setelah data dikembalikan, program menampilkan informasi karyawan kepada pengguna.
 
 ![Sequence Diagram - Adapter Pattern]
-<img width="946" alt="Screen Shot 2025-02-11 at 12 41 32" src="https://github.com/user-attachments/assets/173860a4-b541-46d3-af76-361fdf8a4c44" />
+<img width="951" alt="Screen Shot 2025-02-11 at 13 34 11" src="https://github.com/user-attachments/assets/a5600da3-24ad-4814-810e-c746e1290d69" />
+
 
 
 ---
@@ -61,7 +62,8 @@ Class diagram di bawah ini menunjukkan implementasi **Strategy Design Pattern** 
 - **EmployeeStrategy** adalah antarmuka yang menentukan metode `get_info()`.
 - **ManagerStrategy, EngineerStrategy, dan InternStrategy** adalah implementasi spesifik dari strategi tersebut.
 - **Employee** adalah kelas dasar yang memiliki atribut umum, sedangkan **Manager, Engineer, dan Intern** adalah subclass yang menambahkan atribut spesifik masing-masing.
-<img width="974" alt="Screen Shot 2025-02-10 at 08 43 13" src="https://github.com/user-attachments/assets/8d4ed37b-88f7-47e3-9615-b8bdeb12bbb4" />
+
+<img width="1038" alt="Screen Shot 2025-02-11 at 12 53 57" src="https://github.com/user-attachments/assets/e967a281-4f17-4f0e-a4c1-a695c6d81fd6" />
 
 
 ### 📌 Use Case Diagram "APP"
