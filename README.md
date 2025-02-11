@@ -1,83 +1,92 @@
-# 📌 Laporan Design Pattern 
+# 🚀 Laporan Design Pattern
 ## 📝 Raflee Caesar Dano Malik
 
 ---
 
-## 🔌 Adapter Design Pattern
+# 🔌 Adapter & Strategy Design Pattern
 
-### 📌 Konsep "Adapter Design Pattern"
-Adapter Design Pattern bekerja seperti penerjemah yang membantu dua pihak dengan bahasa berbeda agar bisa berkomunikasi. **Target** adalah cara standar yang diharapkan klien untuk berinteraksi, sedangkan **Adaptee** memiliki kemampuan yang dibutuhkan tetapi dengan cara yang berbeda. **Adapter** berperan sebagai jembatan yang mengubah perintah dari Target menjadi sesuatu yang bisa dipahami oleh Adaptee, sehingga klien tetap bisa menggunakan fitur yang ada tanpa perlu mengubah kode yang sudah ada.
+## 🔷 Adapter Design Pattern
+
+### 📌 Konsep Adapter Design Pattern
+**Adapter Pattern** bekerja seperti penerjemah yang membantu dua pihak yang berbeda agar bisa berkomunikasi.
+
+- **Target** → Antarmuka standar yang diharapkan klien untuk berinteraksi.
+- **Adaptee** → Kelas dengan fungsi yang diinginkan, tetapi menggunakan cara berbeda.
+- **Adapter** → Jembatan antara Target dan Adaptee sehingga bisa bekerja bersama tanpa perlu mengubah kode asli.
+
+> **Intinya:** Pola ini memungkinkan penggunaan kembali kode tanpa perlu mengubahnya!
 
 ![Adapter Design Pattern](https://github.com/user-attachments/assets/3798f760-2359-44bb-b3b2-2f9e97aa44b1)
 
-### 📌 Class Diagram "Adapter Design Pattern"
-Diagram ini menunjukkan hubungan antara kelas-kelas dalam sistem manajemen karyawan dengan pola **Adapter Design Pattern**.
+---
 
-- **Employee** adalah kelas utama yang menyimpan data karyawan seperti nama, posisi, tahun direkrut, gaji, dan tanggal perekrutan.
-- **Manager, Intern, Engineer** adalah turunan dari Employee yang menambahkan atribut spesifik masing-masing.
-- **EmployeeAdapter** bertindak sebagai perantara antara Employee dan antarmuka **IEmployee**, yang hanya memiliki metode `get_info()`.
-- **Adapter** memungkinkan kelas yang sudah ada untuk digunakan dengan cara yang lebih sesuai dengan kebutuhan sistem, tanpa harus mengubah kode aslinya.
+### 📌 Class Diagram
 
-![Class Diagram - Adapter Pattern]
-<img width="883" alt="Screen Shot 2025-02-10 at 08 40 54" src="https://github.com/user-attachments/assets/de2ea333-a0d1-463a-8450-052fe9faf0aa" />
+Dalam sistem manajemen karyawan:
+- **Employee** adalah kelas utama.
+- **Manager, Intern, Engineer** merupakan subclass yang memiliki atribut spesifik.
+- **EmployeeAdapter** berperan sebagai perantara antara **Employee** dan antarmuka **IEmployee**.
 
-### 📌 Use Case Diagram "APP"
-<img width="519" alt="Screen Shot 2025-02-11 at 12 44 41" src="https://github.com/user-attachments/assets/56d850f4-8cd8-4795-9e71-d3f6da226786" />
+<img width="883" alt="Class Diagram - Adapter Pattern" src="https://github.com/user-attachments/assets/de2ea333-a0d1-463a-8450-052fe9faf0aa" />
 
+---
 
+### 📌 Use Case Diagram
 
-### 📌 Sequence Diagram "Adapter Design Pattern"
-Sequence diagram ini menggambarkan bagaimana sistem menangani input pengguna untuk membuat dan menampilkan informasi karyawan.
+<img width="519" alt="Use Case Diagram" src="https://github.com/user-attachments/assets/56d850f4-8cd8-4795-9e71-d3f6da226786" />
 
-1. Pengguna memasukkan data ke dalam **Main Program**.
-2. Main Program memanggil **EmployeeAdapter** untuk membuat objek karyawan melalui metode `create_employee()`.
-3. **EmployeeAdapter** menginisialisasi objek **Employee** (bisa berupa **Manager, Intern, atau Engineer**) dan mengembalikannya.
-4. Saat sistem membutuhkan informasi karyawan, `get_info()` dipanggil pada **EmployeeAdapter**.
-5. **EmployeeAdapter** meminta `get_annual_salary()` dari objek **Employee**.
-6. Setelah data dikembalikan, program menampilkan informasi karyawan kepada pengguna.
+---
 
-![Sequence Diagram - Adapter Pattern]
-<img width="951" alt="Screen Shot 2025-02-11 at 13 34 11" src="https://github.com/user-attachments/assets/a5600da3-24ad-4814-810e-c746e1290d69" />
+### 📌 Sequence Diagram
+Bagaimana sistem menangani input pengguna:
+1. Pengguna memasukkan data karyawan ke **Main Program**.
+2. **Main Program** memanggil **EmployeeAdapter** untuk membuat objek karyawan.
+3. **EmployeeAdapter** menginisialisasi objek **Employee**.
+4. Saat informasi karyawan diperlukan, `get_info()` dipanggil pada **EmployeeAdapter**.
+5. Data dikembalikan dan ditampilkan ke pengguna.
 
-
+<img width="951" alt="Sequence Diagram - Adapter Pattern" src="https://github.com/user-attachments/assets/a5600da3-24ad-4814-810e-c746e1290d69" />
 
 ---
 
 ## 🎯 Strategy Design Pattern
 
-### 📌 Konsep "Strategy Design Pattern"
-**Strategy Design Pattern** memungkinkan kita memilih algoritma atau strategi yang berbeda secara dinamis tanpa mengubah kode inti.
+### 📌 Konsep Strategy Design Pattern
+Pola ini memungkinkan pemilihan algoritma atau strategi secara **dinamis** tanpa mengubah kode inti.
 
-- **Client** menentukan strategi yang akan digunakan melalui **Context**, yang bertindak sebagai perantara untuk mengeksekusi strategi yang dipilih.
-- **Strategy** adalah antarmuka yang mendefinisikan cara kerja strategi.
+- **Client** memilih strategi melalui **Context**.
+- **Strategy** adalah antarmuka yang menentukan metode strategi.
 - **ConcreteStrategy A dan B** adalah implementasi spesifik dari strategi tersebut.
-- Dengan pola ini, kita bisa mengganti algoritma kapan saja tanpa mengubah struktur utama aplikasi, membuatnya lebih fleksibel dan mudah diperluas.
+
+> **Intinya:** Mengubah strategi bisa dilakukan dengan mudah tanpa merombak kode utama!
 
 ![Konsep Strategy Design Pattern](https://github.com/user-attachments/assets/f37057c5-0dad-48a0-a99e-ab30be1644a9)
 
-### 📌 Class Diagram "Strategy Design Pattern"
-Class diagram di bawah ini menunjukkan implementasi **Strategy Design Pattern** dalam manajemen karyawan.
+---
 
-- **EmployeeContext** bertindak sebagai perantara yang menyimpan objek **Employee** dan strategi yang digunakan.
-- **EmployeeStrategy** adalah antarmuka yang menentukan metode `get_info()`.
-- **ManagerStrategy, EngineerStrategy, dan InternStrategy** adalah implementasi spesifik dari strategi tersebut.
-- **Employee** adalah kelas dasar yang memiliki atribut umum, sedangkan **Manager, Engineer, dan Intern** adalah subclass yang menambahkan atribut spesifik masing-masing.
+### 📌 Class Diagram
 
-<img width="1038" alt="Screen Shot 2025-02-11 at 12 53 57" src="https://github.com/user-attachments/assets/e967a281-4f17-4f0e-a4c1-a695c6d81fd6" />
+- **EmployeeContext** bertindak sebagai perantara.
+- **EmployeeStrategy** adalah antarmuka strategi.
+- **ManagerStrategy, EngineerStrategy, InternStrategy** adalah implementasi dari strategi.
+- **Employee** dan subclassnya memiliki atribut spesifik.
 
+<img width="1038" alt="Class Diagram - Strategy Pattern" src="https://github.com/user-attachments/assets/e967a281-4f17-4f0e-a4c1-a695c6d81fd6" />
 
-### 📌 Use Case Diagram "APP"
+---
 
-<img width="519" alt="Screen Shot 2025-02-11 at 12 44 41" src="https://github.com/user-attachments/assets/140990d1-64d8-4d7d-88f5-80da7e7f1b11" />
+### 📌 Use Case Diagram
 
-### 📌 Sequence Diagram "Strategy Design Pattern"
-Sequence diagram ini menggambarkan bagaimana **Strategy Design Pattern** bekerja dalam konteks manajemen karyawan.
+<img width="519" alt="Use Case Diagram" src="https://github.com/user-attachments/assets/140990d1-64d8-4d7d-88f5-80da7e7f1b11" />
 
-1. **Client** terlebih dahulu menetapkan strategi yang akan digunakan (`set_strategy(ManagerStrategy)`) ke dalam **EmployeeContext**.
-2. Saat **Client** meminta informasi karyawan (`get_employee_info()`), **EmployeeContext** meneruskan permintaan ke **EmployeeStrategy**.
-3. **EmployeeStrategy** mengarahkannya ke strategi konkret, dalam hal ini **ManagerStrategy**.
-4. **ManagerStrategy** mengambil informasi spesifik karyawan, termasuk menghitung gaji tahunan (`get_annual_salary()`).
-5. Data yang telah diformat dikembalikan ke **EmployeeContext** dan akhirnya diterima oleh **Client**.
+---
+
+### 📌 Sequence Diagram
+Bagaimana sistem bekerja:
+1. **Client** memilih strategi (`set_strategy(ManagerStrategy)`).
+2. **EmployeeContext** meneruskan ke strategi yang dipilih.
+3. **Strategy** mengambil informasi karyawan.
+4. Data dikembalikan dan ditampilkan ke **Client**.
 
 ![Sequence Diagram - Strategy Pattern](https://github.com/user-attachments/assets/d0211a54-3ab2-4438-9ec9-036737070955)
 
@@ -86,26 +95,20 @@ Sequence diagram ini menggambarkan bagaimana **Strategy Design Pattern** bekerja
 ## 🖥️ CLI Apps
 ### 📌 Tampilan Aplikasi Command Line
 
-Saat berada di halaman awal aplikasi:
-<img width="192" alt="Screen Shot 2025-02-11 at 13 52 07" src="https://github.com/user-attachments/assets/5e61e7ca-92b6-4c3d-bbe9-ce8e27d5a3f1" />
+**Halaman utama aplikasi:**
+<img width="192" alt="CLI Home" src="https://github.com/user-attachments/assets/5e61e7ca-92b6-4c3d-bbe9-ce8e27d5a3f1" />
 
-
-
-Saat ingin menambahkan data karyawan baru:
-
+**Menambahkan karyawan baru:**
 ![CLI Add Employee](https://github.com/user-attachments/assets/d5139071-7fc7-42db-b46d-bd3c51bea370)
 
-Saat ingin melihat data karyawan secara lengkap dari data yang sudah diinputkan sebelumnya:
-
+**Melihat data karyawan:**
 ![CLI View Employee](https://github.com/user-attachments/assets/a1d129ff-2d4d-4ba4-a272-7e3f81f9069c)
 
 ---
 
 ## 📌 Kesimpulan
+✅ **Adapter Pattern** → Menghubungkan kelas dengan antarmuka yang tidak kompatibel tanpa mengubah kode asli.
+✅ **Strategy Pattern** → Memungkinkan perubahan strategi secara fleksibel tanpa mengubah struktur kode utama.
+✅ **Keuntungan:** Meningkatkan modularitas, fleksibilitas, dan keterbacaan kode dalam sistem berbasis **OOP**.
 
-- **Adapter Pattern** berguna untuk menghubungkan kelas dengan antarmuka yang tidak kompatibel tanpa mengubah kode asli.
-- **Strategy Pattern** memungkinkan perubahan strategi atau algoritma secara fleksibel tanpa mengubah struktur kode utama.
-- Kedua pola ini meningkatkan modularitas, fleksibilitas, dan keterbacaan kode dalam sistem berbasis **OOP**.
-
-🚀 **Dengan memahami dan mengimplementasikan Design Patterns ini, kita dapat membangun aplikasi yang lebih scalable dan maintainable!**
 
