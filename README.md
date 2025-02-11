@@ -22,7 +22,8 @@ Diagram ini menunjukkan hubungan antara kelas-kelas dalam sistem manajemen karya
 <img width="883" alt="Screen Shot 2025-02-10 at 08 40 54" src="https://github.com/user-attachments/assets/de2ea333-a0d1-463a-8450-052fe9faf0aa" />
 
 ### 📌 Use Case Diagram "APP"
-<img width="599" alt="Screen Shot 2025-02-10 at 09 16 32" src="https://github.com/user-attachments/assets/731cb8c2-ed2e-4235-b955-5b22d01f8fe2" />
+<img width="519" alt="Screen Shot 2025-02-11 at 12 44 41" src="https://github.com/user-attachments/assets/56d850f4-8cd8-4795-9e71-d3f6da226786" />
+
 
 
 ### 📌 Sequence Diagram "Adapter Design Pattern"
@@ -35,7 +36,9 @@ Sequence diagram ini menggambarkan bagaimana sistem menangani input pengguna unt
 5. **EmployeeAdapter** meminta `get_annual_salary()` dari objek **Employee**.
 6. Setelah data dikembalikan, program menampilkan informasi karyawan kepada pengguna.
 
-![Sequence Diagram - Adapter Pattern](https://github.com/user-attachments/assets/b8d97c80-a292-434d-863b-b0c9a7f5928a)
+![Sequence Diagram - Adapter Pattern]
+<img width="946" alt="Screen Shot 2025-02-11 at 12 41 32" src="https://github.com/user-attachments/assets/173860a4-b541-46d3-af76-361fdf8a4c44" />
+
 
 ---
 
@@ -62,7 +65,8 @@ Class diagram di bawah ini menunjukkan implementasi **Strategy Design Pattern** 
 
 
 ### 📌 Use Case Diagram "APP"
-<img width="599" alt="Screen Shot 2025-02-10 at 09 16 32" src="https://github.com/user-attachments/assets/731cb8c2-ed2e-4235-b955-5b22d01f8fe2" />
+
+<img width="519" alt="Screen Shot 2025-02-11 at 12 44 41" src="https://github.com/user-attachments/assets/140990d1-64d8-4d7d-88f5-80da7e7f1b11" />
 
 ### 📌 Sequence Diagram "Strategy Design Pattern"
 Sequence diagram ini menggambarkan bagaimana **Strategy Design Pattern** bekerja dalam konteks manajemen karyawan.
