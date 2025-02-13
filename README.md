@@ -82,11 +82,5 @@ Sequence diagram ini menggambarkan bagaimana **Strategy Design Pattern** bekerja
 
 ---
 
-## 📌 Kesimpulan
 
-- **Adapter Pattern** berguna untuk menghubungkan kelas dengan antarmuka yang tidak kompatibel tanpa mengubah kode asli.
-- **Strategy Pattern** memungkinkan perubahan strategi atau algoritma secara fleksibel tanpa mengubah struktur kode utama.
-- Kedua pola ini meningkatkan modularitas, fleksibilitas, dan keterbacaan kode dalam sistem berbasis **OOP**.
-
-🚀 **Dengan memahami dan mengimplementasikan Design Patterns ini, kita dapat membangun aplikasi yang lebih scalable dan maintainable!**
 
