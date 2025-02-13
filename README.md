@@ -42,10 +42,13 @@ Sequence diagram ini menggambarkan bagaimana sistem menangani input pengguna unt
 ### 📌 Konsep "Strategy Design Pattern"
 **Strategy Design Pattern** memungkinkan kita memilih algoritma atau strategi yang berbeda secara dinamis tanpa mengubah kode inti.
 
-- **Client** menentukan strategi yang akan digunakan melalui **Context**, yang bertindak sebagai perantara untuk mengeksekusi strategi yang dipilih.
-- **Strategy** adalah antarmuka yang mendefinisikan cara kerja strategi.
-- **ConcreteStrategy A dan B** adalah implementasi spesifik dari strategi tersebut.
-- Dengan pola ini, kita bisa mengganti algoritma kapan saja tanpa mengubah struktur utama aplikasi, membuatnya lebih fleksibel dan mudah diperluas.
+![Konsep Strategy Design Pattern]
+<img width="1260" alt="Screen Shot 2025-02-13 at 13 25 25" src="https://github.com/user-attachments/assets/8a1a21c6-8797-4e98-816a-f454a3a96990" />
+
+## 🎯 Strategy Design Pattern
+
+### 📌 Konsep "Strategy Design Pattern"
+**Strategy Design Pattern** memungkinkan kita memilih algoritma atau strategi yang berbeda secara dinamis tanpa mengubah kode inti.
 
 ![Konsep Strategy Design Pattern](https://github.com/user-attachments/assets/f37057c5-0dad-48a0-a99e-ab30be1644a9)
 
@@ -57,10 +60,10 @@ Class diagram di bawah ini menunjukkan implementasi **Strategy Design Pattern** 
 - **ManagerStrategy, EngineerStrategy, dan InternStrategy** adalah implementasi spesifik dari strategi tersebut.
 - **Employee** adalah kelas dasar yang memiliki atribut umum, sedangkan **Manager, Engineer, dan Intern** adalah subclass yang menambahkan atribut spesifik masing-masing.
 
-![Class Diagram - Strategy Pattern](https://github.com/user-attachments/assets/e967a281-4f17-4f0e-a4c1-a695c6d81fd6)
+![Class Diagram - Strategy Pattern](https://github.com/user-attachments/assets/f37057c5-0dad-48a0-a99e-ab30be1644a9)
 
 ### 📌 Use Case Diagram "APP"
-![Use Case Diagram - APP](https://github.com/user-attachments/assets/140990d1-64d8-4d7d-88f5-80da7e7f1b11)
+![Use Case Diagram - APP](https://github.com/user-attachments/assets/f37057c5-0dad-48a0-a99e-ab30be1644a9)
 
 ### 📌 Sequence Diagram "Strategy Design Pattern"
 Sequence diagram ini menggambarkan bagaimana **Strategy Design Pattern** bekerja dalam konteks manajemen karyawan.
@@ -71,7 +74,10 @@ Sequence diagram ini menggambarkan bagaimana **Strategy Design Pattern** bekerja
 4. **ManagerStrategy** mengambil informasi spesifik karyawan, termasuk menghitung gaji tahunan (`get_annual_salary()`).
 5. Data yang telah diformat dikembalikan ke **EmployeeContext** dan akhirnya diterima oleh **Client**.
 
-![Sequence Diagram - Strategy Pattern](https://github.com/user-attachments/assets/d0211a54-3ab2-4438-9ec9-036737070955)
+![Sequence Diagram - Strategy Pattern](https://github.com/user-attachments/assets/f37057c5-0dad-48a0-a99e-ab30be1644a9)
+
+
+
 
 ---
 
